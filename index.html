@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 80vh;
+            background-color: lightpink;
+        }
+
+        .container {
+            width: 260px;
+            height: 300px;
+            background-color: lightblue;
+            border-radius: 10%;
+            box-shadow: 2px 2px blueviolet;
+            padding: 3%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            box-shadow: 0px 2px black;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form name="login form" action="portal.html">
+            <h1>Login</h1>
+            <i class="fa-solid fa-user"></i> <input id="email" type="text" placeholder="enter email or number"><br><br>
+            <i class="fa-solid fa-eye-low-vision"></i> <input id="password" type="password"
+                placeholder="enter password"><br><br>
+            <button onclick="func()"
+                style="width:230px;height: 30px;background-color: aqua;border-radius: 10px;border: none;">Login</button>
+            <h5>Don't have an account <a href="">Register</a></h5>
+        </form>
+    </div>
+    <script>
+        function func() {
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            if (email == "test1@gmail.com" && pass == "123") {
+                alert("successful")
+                window.location.assign("portal.html")
+            }
+            else {
+               
+                window.location.assign("")
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
